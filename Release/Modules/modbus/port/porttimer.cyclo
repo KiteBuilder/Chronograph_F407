@@ -1,0 +1,4 @@
+../Modules/modbus/port/porttimer.c:40:1:xMBPortTimersInit	1
+../Modules/modbus/port/porttimer.c:48:1:vMBPortTimersEnable	1
+../Modules/modbus/port/porttimer.c:55:1:vMBPortTimersDisable	1
+../Modules/modbus/port/porttimer.c:70:6:HAL_TIM_PeriodElapsedCallback_Modbus	3

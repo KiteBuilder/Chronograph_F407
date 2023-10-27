@@ -1,0 +1,11 @@
+../Core/Src/main.c:185:6:SystemClock_Config	3
+../Core/Src/main.c:94:5:main	10
+../Core/Src/main.c:455:6:HAL_GPIO_EXTI_Callback	8
+../Core/Src/main.c:507:6:HAL_UART_RxCpltCallback	1
+../Core/Src/main.c:516:6:HAL_UART_TxCpltCallback	1
+../Core/Src/main.c:525:6:HAL_TIM_PeriodElapsedCallback	4
+../Core/Src/main.c:607:14:eMBRegInputCB	4
+../Core/Src/main.c:636:14:eMBRegHoldingCB	7
+../Core/Src/main.c:681:14:eMBRegCoilsCB	11
+../Core/Src/main.c:731:14:eMBRegDiscreteCB	1
+../Core/Src/main.c:785:6:Error_Handler	1
