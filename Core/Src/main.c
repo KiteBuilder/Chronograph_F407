@@ -146,7 +146,7 @@ int main(void)
 
     //Setup Modbus RTU module and enable it
     MT_PORT_SetTimerModule(&htim3);
-    MT_PORT_SetUartModule(&huart4);
+    MT_PORT_SetUartModule(&huart4); //use uart1 for debug purposes
     eMBErrorCode eStatus;
     eStatus = eMBInit(MB_RTU, MODBUS_SLAVE_ADDRESS, 0, huart4.Init.BaudRate, MB_PAR_NONE);
     eStatus = eMBEnable();
