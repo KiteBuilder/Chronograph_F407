@@ -155,6 +155,7 @@ int main(void)
         // Error handling
     }
     __enable_irq();
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -810,6 +811,26 @@ static void CtrlRegister_Handler(uint32_t bit)
         default:
             break;
     }
+}
+
+/**
+  * @brief Enable LTC2870 RX mode
+  * @retval
+  */
+void LTC2870_RX485_En_Rx()
+{
+    HAL_GPIO_WritePin(RXEN_L_GPIO_Port, RXEN_L_Pin, GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(DXEN_H_GPIO_Port, DXEN_H_Pin, GPIO_PIN_RESET);
+}
+
+/**
+  * @brief Enable LTC2870 TX mode
+  * @retval
+  */
+void LTC2870_RX485_En_Tx()
+{
+    HAL_GPIO_WritePin(RXEN_L_GPIO_Port, RXEN_L_Pin, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(DXEN_H_GPIO_Port, DXEN_H_Pin, GPIO_PIN_SET);
 }
 
 /* USER CODE END 4 */
