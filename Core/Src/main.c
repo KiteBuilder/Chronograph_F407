@@ -2,7 +2,10 @@
 /**
   ******************************************************************************
   * @file           : main.c
-  * @brief          : Main program body
+  * @brief          : Chronograph application that designed for measuring time
+  *                   between  consistently triggered two sensors and convert
+  *                   this time to the speed in m/s. Distance between two sensors
+  *                   known and permanent.
   ******************************************************************************
   * @attention
   *
